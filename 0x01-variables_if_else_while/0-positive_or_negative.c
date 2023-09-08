@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Print "number is positive " if n >0 
+ * main - Print "number is positive " if n >0
  *              "number is negative " if n <0
  *		        "number is zero" if n == 0
  * Return:  0 Always .
@@ -12,6 +12,7 @@
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -28,3 +29,4 @@ int main(void)
 	}
 
 	return (0);
+}
