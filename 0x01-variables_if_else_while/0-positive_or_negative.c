@@ -1,13 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-
-/**
- * main - Print "number is positive " if n >0
- *              "number is negative " if n <0
- *		        "number is zero" if n == 0
- * Return:  0 Always .
- */
 int main(void)
 {
 	int n;
@@ -27,3 +20,4 @@ int main(void)
 	}
 
 	return (0);
+}
