@@ -9,7 +9,6 @@
 int main(void)
 {
 	int number;
-	char alphabet;
 
 	for (number = 48; number < 58; number++)
 	{
