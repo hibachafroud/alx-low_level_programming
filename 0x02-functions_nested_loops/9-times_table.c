@@ -14,7 +14,7 @@ void times_table(void)
 
 		for (digit2 = 1; digit2 < 10; digit2++)
 		{
-			putchar(',');
+			_putchar(',');
 
 			mult = digit1 * digit2;
 
