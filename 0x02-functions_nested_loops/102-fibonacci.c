@@ -7,17 +7,16 @@
 
 int main(void)
 {
-	int count = 0;
-	int next;
-	int fib1 = 0, fib2 = 1;
+	int count;
+	long int fib1 = 0, fib2 = 1, next;
 
 	for (count = 0; count < 50; count++)
 	{
 		next = fib1 + fib2;
 		if (count == 49)
-			printf("%d\n", next);
+			printf("%ld\n", next);
 		else
-			printf("%d, ", next);
+			printf("%ld, ", next);
 	    fib1 = fib2;
 	    fib2 = next;
 	}
