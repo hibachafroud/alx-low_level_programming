@@ -21,34 +21,34 @@ void print_times_table(int n)
 
 				if (digit1 == 0)
 				{
-					putchar(mult + '0');
+					_putchar(mult + '0');
 				}
 				else if (mult < 10 && digit2 != 0)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					putchar(' ');
-					putchar(mult + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(mult + '0');
 				}
 				else if (mult >= 10 && mult < 100)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
-					putchar(mult / 10 + '0');
-					putchar(mult % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(mult / 10 + '0');
+					_putchar(mult % 10 + '0');
 				}
 				else if (mult >= 100)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(mult / 100 + '0');
-					putchar(mult / 10 % 10) + '0');
-					putchar(mult % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(mult / 100 + '0');
+					_putchar(mult / 10 % 10) + '0');
+					_putchar(mult % 10 + '0');
 				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
