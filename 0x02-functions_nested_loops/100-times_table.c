@@ -23,9 +23,13 @@ void print_times_table(int n)
 
 			mult = digit1 * digit2;
 
-			if (mult <  10 || mult < 100)
+			if (mult <  10)
 			{
 			_putchar(' ');
+			_putchar(' ');
+			}
+			if (mult < 100)
+			{
 			_putchar(' ');
 			}
 			if (mult < 100 && mult >= 10)
