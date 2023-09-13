@@ -11,14 +11,15 @@ int main(void)
 	int next;
 	int fib1 = 0, fib2 = 1;
 
-	while (count < 50)
+	for (count = 0; count < 50; count++)
 	{
 		next = fib1 + fib2;
-	    printf("%d, ", next);
+		if (count == 49)
+			printf("%d\n", next);
+		else
+			printf("%d, ", next);
 	    fib1 = fib2;
 	    fib2 = next;
-	    count++;
 	}
-	printf("\n");
 	return (0);
 }
