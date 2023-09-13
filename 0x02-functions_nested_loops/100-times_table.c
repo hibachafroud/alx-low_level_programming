@@ -16,18 +16,18 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 
-		for (mult = 1; mult <= n; mult++)
+		for (digit2 = 1; digit2 <= n; digit2++)
 		{
 			_putchar(',');
 			_putchar(' ');
 
 			mult = digit1 * digit2;
 
-			if (mult <  10 && mult < 100)
+			if (mult <  10 || mult < 100)
 			{
 			_putchar(' ');
 			}
-			else if (mult < 100 && mult >= 10)
+			if (mult < 100 && mult >= 10)
 			{
 			_putchar((mult / 10) + '0');
 			}
