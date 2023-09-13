@@ -6,7 +6,6 @@
  * @n :the number of times table
  * Return: void
  */
-
 void print_times_table(int n)
 {
 	int digit1, digit2, mult;
@@ -17,29 +16,30 @@ void print_times_table(int n)
 		{
 		    _putchar('0');
 
-			for (digit2 = 0; digit2 <= n; digit1++)
+			for (digit2 = 1; digit2 <= n; digit1++)
 			{
-			    _putchar(',');
-				_putchar(' ');
 				mult = digit1 * digit2;
 
-				if (mult < 10 && digit1 != 0)
+				_putchar(',');
+				_putchar(' ');
+
+				if (mult < 10)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(mult + '0');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(mult + '0');
 				}
 				else if (mult >= 10 && mult < 100)
 				{
-					_putchar(' ');
-					_putchar((mult / 10) + '0');
-					_putchar((mult % 10) + '0');
+				_putchar(' ');
+				_putchar((mult / 10) + '0');
+				_putchar((mult % 10) + '0');
 				}
 				else if (mult >= 100)
 				{
-					_putchar((mult / 100) + '0');
-					_putchar((mult / 10) % 10) + '0');
-					_putchar((mult % 10) + '0');
+				_putchar((mult / 100) + '0');
+				_putchar(((mult / 10) % 10) + '0');
+				_putchar((mult % 10) + '0');
 				}
 			}
 			_putchar('\n');
