@@ -13,11 +13,11 @@ int main(void)
 	while (true)
 	{
 		next = fib1 + fib2;
-		if (next < 4000000)
+		if (sum > 4000000)
 		{
 		break;
 		}
-		else if ((next % 2) == 0)
+		else if ((next % 2) == 0 && sum < 4000000)
 			sum += next;
 
 		fib1 = fib2;
