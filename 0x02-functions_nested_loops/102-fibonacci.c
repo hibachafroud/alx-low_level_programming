@@ -11,7 +11,7 @@ int main(void)
 	int next;
 	int fib1 = 0, fib2 = 1;
 
-	while (i < 1024)
+	while (count < 1024)
 	{
 		next = fib1 + fib2;
 	    printf("%d, ", next);
