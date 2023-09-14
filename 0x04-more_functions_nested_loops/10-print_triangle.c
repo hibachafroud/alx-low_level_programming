@@ -4,7 +4,7 @@
  * @size:size is the number of times the character # should be printed
  *
  * if size is 0 or less, the function should only print a '\n'
- * the diagonal should end with a '\n'
+ * the triangle should end with a '\n'
  *
  * Return: void ;
  */
