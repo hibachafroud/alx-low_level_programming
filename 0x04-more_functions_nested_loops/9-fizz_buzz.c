@@ -1,11 +1,9 @@
 #include <stdio.h>
 /**
  * main -  prints the numbers from 1 to 100
- *  for multiples of three print Fizz instead of the number.
- *  for the multiples of five print Buzz.
- *  for numbers which are multiples of both
- *        three and five print FizzBuzz.
- *  each number or word should be separated by a space
+ *  for multiples of 3 print Fizz.
+ *  for the multiples of 5 print Buzz.
+ *  for numbers of both multiples 3 and 5 print FizzBuzz.
  *
  * Return:  0 Always .
  */
