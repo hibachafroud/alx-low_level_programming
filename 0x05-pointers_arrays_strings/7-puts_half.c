@@ -11,7 +11,7 @@
 
 void puts_half(char *str)
 {
-	int strlen, strlen1;
+	int strlen, i;
 
 	strlen = 0;
 
@@ -20,19 +20,19 @@ void puts_half(char *str)
 		strlen++;
 	}
 
-	if (strlen % 2 != 0)
+	if (strlen % 2 == 0)
 	{
-		strlen1 = (strlen - 1) / 2;
+		for (i = strlen / 2; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
-	else
+	else if (strlen % 2)
 	{
-		strlen1 = strlen / 2;
-	}
-
-	while (strlen1 < strlen)
-	{
-		_putchar(str[strlen1 + 1]);
-		strlen1++;
+		for (i = (strlen - 1) / 2; i < strlen - 1; i++)
+		{
+			_putchar(str[i + 1]);
+		}
 	}
 	_putchar('\n');
 }
