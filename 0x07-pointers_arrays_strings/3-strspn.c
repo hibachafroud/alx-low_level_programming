@@ -8,19 +8,16 @@
  *              which consist only of bytes from accept
  */
 
-char _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
 
-	int nb = 0;
-
-	for (i = 0; s[i] ; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; accept[j] ; j++)
+		for (j = 0; accept[j]; j++)
 		{
-			if (s[i] == accept[j])
+			if (accept[j] == s[i])
 			{
-				nb++;
 				break;
 			}
 		}
@@ -29,5 +26,5 @@ char _strspn(char *s, char *accept)
 			break;
 		}
 	}
-	return (nb);
+	return (i);
 }
