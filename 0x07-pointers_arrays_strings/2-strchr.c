@@ -13,19 +13,17 @@ char *_strchr(char *s, char c)
 {
 	int i;
 
-	char *found_c = NULL;
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			found_c = s + i;
+			return (s + i);
 		}
 	}
 	if (s[i] == c)
 	{
-		found_c = s + i;
+		return (s + i);
 	}
 
-	return (found_c);
+	return (NULL);
 }
