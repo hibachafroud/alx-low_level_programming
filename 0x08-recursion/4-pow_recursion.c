@@ -6,7 +6,7 @@
  * @x: int
  * @y: int
  *
- * Return: int; length of string
+ * Return: int;
  */
 
 int _pow_recursion(int x, int y)
